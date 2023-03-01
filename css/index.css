@@ -1,0 +1,26 @@
+*{
+    color: #fff !important;
+}
+
+body{
+    background: rgb(249, 255, 185) !important;
+}
+
+.navb{
+    background: #003589;
+    margin-left: 0;
+    margin-right: 0;
+    height: 80px;
+}
+
+.nav-position{
+    justify-content: right;
+}
+
+.margin-nav{
+    margin: 0 10px; 
+}
+
+.icon-title{
+    margin-left: 20px;
+}
