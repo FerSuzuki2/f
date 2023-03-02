@@ -7,10 +7,13 @@ body{
 }
 
 .navb{
-    background: #003589;
     margin-left: 0;
     margin-right: 0;
     height: 80px;
+}
+
+.nav-color{
+    color: #003589 !important;
 }
 
 .nav-position{
@@ -22,5 +25,6 @@ body{
 }
 
 .icon-title{
-    margin-left: 20px;
+    margin-left: 15px;
+    font-size: 1.5em !important;
 }
