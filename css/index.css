@@ -3,14 +3,18 @@
 }
 
 body{
-    background: rgb(249, 255, 185) !important;
+    background: #dfa24e !important;
     height: 500px;
 }
 
+.nav-index{
+    padding-left: 14px !important;
+}
+
 .navb{
-    margin-left: 0;
-    margin-right: 0;
+    background-color: #fff !important;
     height: 80px;
+    border-bottom: #003589 solid 1px;
 }
 
 .nav-color{
@@ -18,14 +22,118 @@ body{
 }
 
 .nav-position{
-    justify-content: right;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .margin-nav{
-    margin: 0 10px; 
+    margin: 6px 10px 0px 10px; 
+    padding: 0px !important;
+    width: fit-content;
+    vertical-align: middle !important;
 }
 
 .icon-title{
-    margin-left: 15px;
+    margin-left: 16px;
     font-size: 1.5em !important;
+}
+
+.navbar-toggler{
+    background-color: #003589 !important;
+    padding: 2px 5px !important;
+    margin: 5px !important;
+}
+
+.container-index{
+    height: 500px;
+    background-color: #003589;
+}
+
+.h1-index{
+    font-size: 40px;
+    width: 800px;
+    padding-top: 20px;
+    margin: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.box-img img{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 500px;
+}
+
+.h3-index{
+    line-height: 24px;
+    margin: 180px 200px 50px 0;
+    position: fixed;
+}
+
+.container {
+    margin-top: 60px !important;
+    position: relative;
+    padding: 15px;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  
+.gallery-wrapper {
+    overflow-x: auto;
+    margin: 0 40px !important;
+}
+
+.arrow-left,
+.arrow-right {
+    position: absolute !important;
+    top: 10px;
+    left: -5px;
+    right: auto;
+    bottom: 10px;
+    font-size: 40px;
+    line-height: 250px;
+    width: 40px;
+    color: #F4F0E9 !important;
+    transition: all 600ms ease-in-out;
+    background: linear-gradient(to left, transparent 0%, black 900%);
+    opacity: 1;
+    cursor: pointer;
+    border: none;
+}
+
+.arrow-right {
+    right: -5px;
+    left: auto;
+    text-align: right;
+    background: linear-gradient(to right, transparent 0%, black 900%);
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+}
+
+.item {
+    width: 250px !important;
+    height: 250px !important;
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+    opacity: 0.4;
+}
+
+.current-item {
+    opacity: 1;
+}
+
+.gallery-wrapper::-webkit-scrollbar {
+    display: none !important;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.gallery-wrapper {
+-ms-overflow-style: none; /* IE and Edge */
+scrollbar-width: none; /* Firefox */
 }
