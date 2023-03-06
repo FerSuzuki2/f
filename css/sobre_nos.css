@@ -3,6 +3,7 @@
 main{
     text-align: center;
     margin-top: 50px;
+    margin-bottom: -20px;
 }
 
 .parte1{
@@ -18,7 +19,7 @@ h2{
     color: #003589 !important;
 }
 
-p{
+.p-sobrenos{
     list-style: none;
     font-family: 'Raleway';
     color: #000 !important;
@@ -45,5 +46,3 @@ p{
 .videoparagrafo .tjpr{
     color: #fff !important;
 }
-
-
