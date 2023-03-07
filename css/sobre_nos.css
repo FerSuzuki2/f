@@ -55,6 +55,7 @@ main{
 
 .parte1{
     margin-bottom: 100px;
+    height: 400px;
 }
 
 p .tjpr{
@@ -92,4 +93,30 @@ p{
     color: #fff !important;
 }
 
+/** Parte 3 **/
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@100&family=Rubik:ital,wght@0,400;1,300&display=swap');
+
+.background{
+  color: #000;
+}
+
+h1{
+  margin-left: 50px;
+  font-family: 'Rubik';
+}
+
+
+.pgf h2{
+    font-size: larger;
+}
+
+.pgf{
+    height: 600px;
+}
+
+.pgf p{
+    font-size: 15px;
+    align-items: start;
+    font-family: 'Roboto', sans-serif;
+}
 
