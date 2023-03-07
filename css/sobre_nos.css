@@ -1,61 +1,13 @@
-/** Geral **/
-
-*{
-    color: #fff !important;
-}
-
-body{
-    background: rgb(249, 255, 185) !important;
-    height: 500px;
-}
-
-/** Navbar **/
-
-.navb{
-    margin-left: 0;
-    margin-right: 0;
-    height: 80px;
-}
-
-.nav-color{
-    color: #003589 !important;
-}
-
-.nav-position{
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.margin-nav{
-    margin: 6px 10px 0px 10px; 
-    padding: 0px !important;
-    width: fit-content;
-    vertical-align: middle !important;
-}
-
-.icon-title{
-    margin-left: 16px;
-    font-size: 1.5em !important;
-}
-
-.navbar-toggler{
-    background-color: #003589 !important;
-    padding: 2px 5px !important;
-    margin: 5px !important;
-}
-
-
 /** Body **/
 
 main{
     text-align: center;
     margin-top: 50px;
+    margin-bottom: -20px;
 }
 
 .parte1{
     margin-bottom: 100px;
-    height: 400px;
 }
 
 p .tjpr{
@@ -67,7 +19,7 @@ h2{
     color: #003589 !important;
 }
 
-p{
+.p-sobrenos{
     list-style: none;
     font-family: 'Raleway';
     color: #000 !important;
@@ -81,8 +33,10 @@ p{
 }
 
 .parte2 img{
-    width: 400px;
-    height: 225px;
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 500px;
 }
 
 .videoparagrafo{
@@ -92,31 +46,3 @@ p{
 .videoparagrafo .tjpr{
     color: #fff !important;
 }
-
-/** Parte 3 **/
-@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@100&family=Rubik:ital,wght@0,400;1,300&display=swap');
-
-.background{
-  color: #000;
-}
-
-h1{
-  margin-left: 50px;
-  font-family: 'Rubik';
-}
-
-
-.pgf h2{
-    font-size: larger;
-}
-
-.pgf{
-    height: 600px;
-}
-
-.pgf p{
-    font-size: 15px;
-    align-items: start;
-    font-family: 'Roboto', sans-serif;
-}
-
