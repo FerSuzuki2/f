@@ -78,6 +78,28 @@ form{
     color: black !important;
 }
 
+#firstName{
+    color: black !important;
+} 
+#lastName{
+    color: black !important;
+}
+#email{
+    color: black !important;
+}
+#cpf{
+    color: black !important;
+} 
+#city{
+    color: black !important;
+}
+#tel{
+    color: black !important;
+}
+#message{
+    color: black !important;
+}
+
 .divEsquerda .form-control{
     border: none;
     border-radius: 5px;
