@@ -14,6 +14,15 @@ li {
 
 /* NAVBAR */
 
+.text-nav {
+    color: #003589 !important;
+    text-decoration: none;
+}
+
+.text-home {
+    text-decoration: underline !important;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
