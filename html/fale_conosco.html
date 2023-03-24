@@ -12,8 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>Hope Books - Fale Conosco</title>
 </head>
-<body>
-
+<body class="body-form">
     <!--HEADER-->
     <nav class="navbar">
       <!-- LOGO -->
@@ -26,7 +25,7 @@
           <label for="checkbox_toggle" class="hamburger">&#9776;</label>
       <!-- NAVEGAÇÃO MENUS -->
         <div class="menu">
-          <li><a class="text-home" href="../html/index.html">Home</a></li>
+          <li><a href="../html/index.html">Home</a></li>
           <li><a href="../html/fale_conosco.html">Fale Conosco</a></li>
           <li><a href="../html/sobre_nos.html">Sobre Nós</a></li>
           <li><a href="../html/produtos.html">Produtos</a></li>
@@ -35,102 +34,86 @@
     </nav>
 
     <!--MAIN-->
-    <h1>Fale Conosco!</h1>
-  <h4>Preencha o formulário abaixo para contatarmos você!</h4>
-  <div class="container-fluid divP">
-    <div id="divDireita">
-            <img src="../img/icon_hopebooks.png">
-    </div>
-    <div class="divEsquerda container-fluid">
-            <form class="row g-3 form" method="post" action="/persistir" onsubmit="return validar()">
-                <div class="col-md-5">
-                  <label class="form-label">Nome da Vítima:</label>
-                  <input type="text" class="form-control" name="nome" id="firstName" placeholder="Insira o nome da vítima">
-                  <p id="validation"></p>
+    <h1 class="blue-text">Fale Conosco!</h1>
+    <h4 class="blue-text">Preencha o formulário abaixo para contatarmos você!</h4>
+    <div class="container-fluid divP">
+      <div id="divDireita">
+              <img src="../img/icon_hopebooks.png">
+      </div>
+      <div class="divEsquerda container-fluid">
+        <form class="row g-3 form" method="post" action="/persistir" onsubmit="return validar()">
+            <div class="col-md-5">
+              <label class="form-label">Nome:</label>
+              <input type="text" class="form-control" name="nome" id="firstName" placeholder="Insira o seu nome">
+              <p id="validation"></p>
+            </div>
+            <div class="col-md-5">
+              <label class="form-label">Sobrenome:</label>
+              <input type="text" name="sobrenome" class="form-control" id="lastName" placeholder="Insira o seu sobrenome">
+              <p id="validation2"></p>
+            </div>
+            <div class="col-md-5">
+              <label class="form-label">E-mail:</label>
+              <div class="input-group">
+                <div class="input-group-text arroba">@</div>
+                <input type="email" name="email" class="form-control" id="email" aria-describedby="inputGroupPrepend" placeholder="Insira um e-mail">
                 </div>
-                <div class="col-md-6">
-                  <label class="form-label">Sobrenome da Vítima:</label>
-                  <input type="text" name="sobrenome" class="form-control" id="lastName" placeholder="Insira o sobrenome da vítima">
-                  <p id="validation2"></p>
-                </div>
-                <div class="form-check-inline">
-                <label class="sexo"> Sexo: </label>
-                <div class="form-check">
-                  <input type="radio" class="form-check-input" name="sexo" value="1">
-                  <label class="form-check-label">Feminino</label>
-                </div>
-                <div class="form-check">
-                  <input type="radio" class="form-check-input" name="sexo" value="2">
-                  <label class="form-check-label">Masculino</label>
-                </div>
-                </div>
-                <div class="col-md-6">
-                  <label class="form-label">E-mail:</label>
-                  <div class="input-group">
-                    <div class="input-group-text arroba">@</div>
-                    <input type="email" name="email" class="form-control" id="email" aria-describedby="inputGroupPrepend" placeholder="Insira um e-mail">
-                    </div>
-                    <p id="validation3"></p>
-                </div>
-                <div class="col-md-5">
-                  <label class="form-label">Telefone:</label>
-                  <input type="tel" name="telefone" class="form-control" id="tel" placeholder="(00) 12345-6789">
-                  <p id="validation4"></p>  
-                </div>
-                  <div class="col-md-6">
-                    <label class="form-label">CPF (sem ponto e hífen):</label>
-                    <input type="text" name="cpf" class="form-control" id="cpf" placeholder="Insira um CPF">
-                    <p id="validation5"></p>
-                  </div>
-                <div class="col-md-5">
-                  <label class="form-label">Cidade</label>
-                  <input type="text" name="cidade" class="form-control" id="city" placeholder="Insira uma cidade">
-                  <p id="validation6"></p>
-                </div>
-                <div class="col-md-5 state">
-                  <label class="form-label">Estado</label>
-                  <select class="form-select" name="estado" id="state">
-                    <option class="state" value="">Selecione</option>
-                    <option class="state" value="AC">Acre</option>
-                    <option class="state" value="AL">Alagoas</option>
-                    <option class="state" value="AP">Amapá</option>
-                    <option class="state" value="AM">Amazonas</option>
-                    <option class="state" value="BA">Bahia</option>
-                    <option class="state" value="CE">Ceará</option>
-                    <option class="state" value="DF">Distrito Federal</option>
-                    <option class="state" value="ES">Espirito Santo</option>
-                    <option class="state" value="GO">Goiás</option>
-                    <option class="state"class="state" value="MA">Maranhão</option>
-                    <option class="state" value="MA">Maranhão</option>
-                    <option class="state" value="MS">Mato Grosso do Sul</option>
-                    <option class="state" value="MT">Mato Grosso</option>
-                    <option class="state" value="MG">Minas Gerais</option>
-                    <option class="state" value="PA">Pará</option>
-                    <option class="state" value="PB">Paraíba</option>
-                    <option class="state" value="PR">Paraná</option>
-                    <option class="state" value="PE">Pernambuco</option>
-                    <option class="state" value="PI">Piauí</option>
-                    <option class="state" value="RJ">Rio de Janeiro</option>
-                    <option class="state" value="RN">Rio Grande do Norte</option>
-                    <option class="state" value="RS">Rio Grande do Sul</option>
-                    <option class="state" value="RO">Rondônia</option>
-                    <option class="state" value="RR">Roraima</option>
-                    <option class="state" value="SC">Santa Catarina</option>
-                    <option class="state" value="SP">São Paulo</option>
-                    <option class="state" value="SE">Sergipe</option>
-                    <option class="state" value="TO">Tocantins</option>
-                  </select>
-                  <p id="validation7"></p>
-                </div>
-                <div class="col-11 mb-2">
-                  <label class="form-label">Mensagem</label>
-                  <textarea name="mensagem" class="form-control" id="message" placeholder="Insira uma mensagem"></textarea>
-                  <p id="validation8"></p>
-                </div>
-                <div class="col-11">
-                  <button class="mb-lg-3 botao" id="submit" type="submit" onclick="callAll()" href="./listar.ejs">Enviar</button>
-                </div>
-              </form>
+                <p id="validation3"></p>
+            </div>
+            <div class="col-md-5">
+              <label class="form-label">Telefone:</label>
+              <input type="tel" name="telefone" class="form-control" id="tel" placeholder="(00) 12345-6789">
+              <p id="validation4"></p>  
+            </div>
+            <div class="col-md-5">
+              <label class="form-label">Cidade</label>
+              <input type="text" name="cidade" class="form-control" id="city" placeholder="Insira uma cidade">
+              <p id="validation6"></p>
+            </div>
+            <div class="col-md-5 state">
+              <label class="form-label">Estado</label>
+              <select class="form-select" name="estado" id="state">
+                <option class="state" value="">Selecione</option>
+                <option class="state" value="AC">Acre</option>
+                <option class="state" value="AL">Alagoas</option>
+                <option class="state" value="AP">Amapá</option>
+                <option class="state" value="AM">Amazonas</option>
+                <option class="state" value="BA">Bahia</option>
+                <option class="state" value="CE">Ceará</option>
+                <option class="state" value="DF">Distrito Federal</option>
+                <option class="state" value="ES">Espirito Santo</option>
+                <option class="state" value="GO">Goiás</option>
+                <option class="state" value="MA">Maranhão</option>
+                <option class="state" value="MA">Maranhão</option>
+                <option class="state" value="MS">Mato Grosso do Sul</option>
+                <option class="state" value="MT">Mato Grosso</option>
+                <option class="state" value="MG">Minas Gerais</option>
+                <option class="state" value="PA">Pará</option>
+                <option class="state" value="PB">Paraíba</option>
+                <option class="state" value="PR">Paraná</option>
+                <option class="state" value="PE">Pernambuco</option>
+                <option class="state" value="PI">Piauí</option>
+                <option class="state" value="RJ">Rio de Janeiro</option>
+                <option class="state" value="RN">Rio Grande do Norte</option>
+                <option class="state" value="RS">Rio Grande do Sul</option>
+                <option class="state" value="RO">Rondônia</option>
+                <option class="state" value="RR">Roraima</option>
+                <option class="state" value="SC">Santa Catarina</option>
+                <option class="state" value="SP">São Paulo</option>
+                <option class="state" value="SE">Sergipe</option>
+                <option class="state" value="TO">Tocantins</option>
+              </select>
+              <p id="validation7"></p>
+            </div>
+            <div class="col-10 mb-2">
+              <label class="form-label">Mensagem</label>
+              <textarea name="mensagem" class="form-control" id="message" placeholder="Insira uma mensagem"></textarea>
+              <p id="validation8"></p>
+            </div>
+            <div class="col-10 btn-send">
+              <button class="mb-lg-3 botao" id="submit" type="submit" onclick="callAll()" href="./listar.ejs">Enviar</button>
+            </div>
+        </form>
         </div>
 </div>
 
